@@ -1,0 +1,61 @@
+{
+  "executionRoleArn": "<<TASK_EXECUTION_ROLE_ARN>>",
+  "taskRoleArn": "<<TASK_EXECUTION_ROLE_ARN>>",
+  "containerDefinitions": [
+    {
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "secretOptions": [],
+        "options": {
+          "awslogs-group": "<<LOG_GROUP>>",
+          "awslogs-region": "<<DEFAULT_REGION>>",
+          "awslogs-stream-prefix": "awslogs-tripmgmtdemo-ecstask"
+        }
+      },
+      "entryPoint": [],
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "protocol": "tcp",
+          "containerPort": 8080
+        }
+      ],
+      "environment": [
+        {
+          "name": "JAVA_OPTS",
+          "value": "-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses"
+        },
+        {
+          "name": "JHIPSTER_SLEEP",
+          "value": "0"
+        },
+        {
+          "name": "SPRING_DATASOURCE_URL",
+          "value": "jdbc:mysql://<<AURORA_MYSQL_RDS_URL>>:3306/tripmgmt?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC"
+        },
+        {
+          "name": "SPRING_DATASOURCE_USERNAME",
+          "value": "<<DB_USERNAME>>"
+        },
+		{
+          "name": "SPRING_DATASOURCE_PASSWORD",
+          "value": "<<DB_PASSWORD>>"
+        },
+		{
+          "name": "SPRING_PROFILES_ACTIVE",
+          "value": "prod,swagger"
+        }
+      ],
+      "image": "<<ECR_LATEST_IMAGE_URL>>",
+      "essential": true,
+      "name": "cntr-img-tripmgmt"
+    }
+  ],
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": "awsvpc",
+  "family": "task-tripmgmt-demo",
+  "cpu": "2048",
+  "memory": "4096"
+}

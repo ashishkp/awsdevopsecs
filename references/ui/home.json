@@ -1,0 +1,15 @@
+{
+  "home": {
+    "title": "Welcome, Octank Trip Management Demo Application !",
+    "subtitle": "Solution Demo Details.",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    },
+    "usecase": "Octank's travel division wants to move their outdated online ticketing system--currently hosted on premises--to the cloud.",
+    "challenge1": "They want their development and operations teams to adopt a DevOps model, and be able to take advantage of the speed and agility that AWS provides.",
+    "challenge2": "They want to be able to perform zero-downtime deployments, something they currently do not do--instead doing deployments in the middle of the night.",
+    "challenge3": "They have a distributed development team, and want a way to solve 'but it works on my machine' when dealing with distributed teams of developers.",
+    "challenge4": "They want to develop a mobile app that allows users to check on status of trips.",
+    "solution": "Solution Demo is focusing on how Octank team can leverage AWS cloud with <b>DevOps</b> services and <b>Elastic Container Service</b> to run their existing code base - having multiple technologies like Java, React, NodeJs...etc"
+  }
+}
