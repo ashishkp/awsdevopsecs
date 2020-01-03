@@ -1,11 +1,11 @@
-# Demo Project: AWS DevOps Services and Amazon Elastic Container Service
+# ECS Reference Architecture: Continous Deployment Pipeline
 
 This Demo Project guides in implementing AWS DevOps Services using Blue-Green Deployment of Java and React based Monolith Application on Amazon ECS with Amazon EC2 & AWS Fargate launch type, one by one.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About Demo Project](#about-demo-project)
+* [About Project](#about-project)
   * [Built With](#built-with)
   * [Prerequisites](#prerequisites)
 * [Setup Monolith Application](#setup-monolith-application)
@@ -25,12 +25,10 @@ This Demo Project guides in implementing AWS DevOps Services using Blue-Green De
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
-<!-- ABOUT Demo Project -->
-## About Demo Project
+<!-- ABOUT Project -->
+## About Project
 
-This demo project was created as part of a `Master Builder` program. The `Master Builder Program (MBP)` is an internal SA-enablement initiative at AWS that aims to better prepare newly hired AWS Solution Architects for the type of work they'll be doing with our customers.
-
-This demo implements proof of concept solution to a specific usecase of a fictitious company called Octank.
+This demo implements proof of concept solution to a specific usecase of a fictitious company called Octank. 
 
 **Problem Statement**\
 Octank's travel division wants to move their outdated online ticketing system, currently hosted on premises, to the cloud. They have following key current challenges.
@@ -41,7 +39,7 @@ Octank's travel division wants to move their outdated online ticketing system, c
 4. They want to develop a mobile app that allows users to check on status of trips.
 
 **Solution**\
-Solution *proof of concept* demo is focusing on how Octank Team can leverage AWS cloud with **DevOps Services** and **Elastic Container Service** to run their existing code base - having multiple technologies like Java, React, NodeJs...etc\
+Solution *proof of concept* is focusing on how Octank Team can leverage AWS cloud with **DevOps Services** and **Elastic Container Service** to run their existing code base - having multiple technologies like Java, React, NodeJs...etc\
 \
 ![Project Demo Screenshot](images/project-demo-screenshot.png)
 
@@ -49,13 +47,13 @@ Solution is prepared with Amazon ECS service for deployment. It provides two lau
 
 ##### AWS Demo Architecture - DevOps with ECS on EC2 launch type
 
-![Project Demo Screenshot](images/prj-architecture-ecs-ec2.png)
+![DevOps with ECS on EC2 launch type](images/prj-architecture-ecs-ec2.png)
 
 ##### AWS Demo Architecture - DevOps with ECS on Fargate launch type
 
 In Architecture diagram, **green** marked section under VPC, shows difference w.r.t EC2 Launch type, in terms of services automatically taken care by AWS Fargate, making developer and operation team's job simple.
 
-![Project Demo Screenshot](images/prj-architecture-ecs-fargate.png)
+![DevOps with ECS on Fargate launch type](images/prj-architecture-ecs-fargate.png)
 
 ### Built With
 This section lists major frameworks and services part of working project demo.
