@@ -1,4 +1,4 @@
-# Demo Project: AWS DevOps Services with Amazon Elastic Container Service
+# Demo Project: AWS DevOps Services and Amazon Elastic Container Service
 
 This Demo Project guides in implementing AWS DevOps Services using Blue-Green Deployment of Java and React based Monolith Application on Amazon ECS with Amazon EC2 & AWS Fargate launch type, one by one.
 
@@ -19,6 +19,7 @@ This Demo Project guides in implementing AWS DevOps Services using Blue-Green De
   * [Setup Amazon ECS with Autoscaling Amazon EC2](#setup-amazon-ecs-with-autoscaling-amazon-ec2)
   * [Setup CodeDeploy and CodePipeline with Amazon ECS on Amazon EC2](#setup-codedeploy-and-codepipeline-with-amazon-ecs-on-amazon-ec2)
   * [Modify CodeDeploy and CodePipeline for Amazon ECS on AWS Fargate](#modify-codedeploy-and-codepipeline-for-amazon-ecs-on-aws-fargate)
+* [What's Next](#whats-next)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -731,6 +732,11 @@ As per given architecture, portion highlighted in **Green** will be taken care b
 
 8. Hurray !!! You have successfully tested CodeDeploy and CodePipeline for Amazon ECS on AWS Fargate.
 
+<!-- What's Next -->
+## What's Next
+
+Planning to add support for Amazon Elastic Kubernetes Service (EKS) - Managed Kubernetes Service. AWS has also recently announced support for [Amazon EKS on AWS Fargate](https://aws.amazon.com/blogs/aws/amazon-eks-on-aws-fargate-now-generally-available/), with this EKS and Fargate make it straightforward to run Kubernetes-based applications on AWS by removing the need to provision and manage infrastructure for pods, this shall also be super fun to implement.
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -751,9 +757,10 @@ Distributed under the Apache License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ashish Patel - [@ashishkp4u](https://twitter.com/ashishkp4u)
-
-Project Link: [https://github.com/ashishkp/awsdevopsecs][awsdevopsecs-github-url]
+Ashish Patel - 
+[![Twitter][twitter-shield]][twitter-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Github][github-shield]][github-url]
 
 ## Acknowledgements
 
@@ -769,6 +776,13 @@ Project Link: [https://github.com/ashishkp/awsdevopsecs][awsdevopsecs-github-url
 * [Creating an Amazon Aurora DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html)
 * [Tutorial: Create a Pipeline with an Amazon ECR Source and ECS-to-CodeDeploy Deployment](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-ecs-ecr-codedeploy.html)
 * [Tutorial: Using Cluster Auto Scaling with the AWS Management Console](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-cluster-auto-scaling-console.html)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [awsdevopsecs-github-url]: https://github.com/ashishkp/awsdevopsecs
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/ashishkp
+[twitter-shield]: https://img.shields.io/twitter/url/https/shields.io.svg?style=social
+[twitter-url]: https://twitter.com/ashishkp4u
+[github-shield]: https://img.shields.io/github/followers/ashishkp.svg?style=social
+[github-url]: https://github.com/ashishkp
