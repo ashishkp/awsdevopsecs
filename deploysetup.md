@@ -5,7 +5,7 @@
 
 * [Deployment Setup](#deployment-setup)
   * [Create required AWS IAM Roles](#create-required-aws-iam-roles)
-  * [Create CodeCommit and Elastic Container Repository](#create-codecommit-and-elastic-container-repository)
+  * [Create CodeCommit and Container Repository](#create-codecommit-and-container-repository)
   * [Setup Aurora MySQL RDS Database](#setup-aurora-mysql-rds-database)
   * [Setup Amazon ECS with Autoscaling Amazon EC2](#setup-amazon-ecs-with-autoscaling-amazon-ec2)
 
@@ -70,7 +70,7 @@ To create the `ecsCodeDeployRole` IAM role
     aws iam create-service-linked-role --aws-service-name autoscaling.amazonaws.com
     ```
 
-### Create CodeCommit and Elastic Container Repository
+### Create CodeCommit and Container Repository
 
 **Create a CodeCommit repository**
 
@@ -98,7 +98,7 @@ To create the `ecsCodeDeployRole` IAM role
     git push origin master
     ````
 
-**Create Elastic Container repository**
+**Create Container repository**
 
 1. Open the [Amazon ECR console](https://console.aws.amazon.com/ecr/repositories).
 2. From the navigation bar, choose the **Region** (i.e. `default region`) to create your repository in

@@ -14,7 +14,7 @@ This Demo Project guides in implementing AWS DevOps Services using Blue-Green De
   * [Modify Application Demo for Trip Management usecase](appsetup.md#modify-application-demo-for-trip-management-usecase)
 * [Deployment Setup](deploysetup.md#deployment-setup)
   * [Create required AWS IAM Roles](deploysetup.md#create-required-aws-iam-roles)
-  * [Create CodeCommit and Elastic Container Repository](deploysetup.md#create-codecommit-and-elastic-container-repository)
+  * [Create CodeCommit and Container Repository](deploysetup.md#create-codecommit-and-container-repository)
   * [Setup Aurora MySQL RDS Database](deploysetup.md#setup-aurora-mysql-rds-database)
   * [Setup Amazon ECS with Autoscaling Amazon EC2](deploysetup.md#setup-amazon-ecs-with-autoscaling-amazon-ec2)
 * [DevOps Pipeline Setup](devopssetup.md#devops-pipeline-setup)
